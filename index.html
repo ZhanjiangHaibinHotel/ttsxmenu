@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子菜单</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo -->
+    <img src="pic/听涛水榭logo.png" alt="餐厅Logo" class="logo">
+
+    <!-- 分类菜单 -->
+    <div class="category-menu">
+        <button class="category-btn active" data-category="all">全部</button>
+        <button class="category-btn" data-category="food">主食</button>
+        <button class="category-btn" data-category="drink">饮品</button>
+        <button class="category-btn" data-category="dessert">甜点</button>
+    </div>
+
+    <!-- 菜单容器 -->
+    <div class="menu-container">
+        <div class="menu-slide" data-category="food">
+            <img src="pic/1.jpg" alt="主食1">
+        </div>
+        <div class="menu-slide" data-category="food">
+            <img src="pic/2.jpg" alt="主食2">
+        </div>
+        <div class="menu-slide" data-category="drink">
+            <img src="pic/3.jpg" alt="饮品1">
+        </div>
+        <div class="menu-slide" data-category="drink">
+            <img src="pic/2.jpg" alt="饮品2">
+        </div>
+        <div class="menu-slide" data-category="dessert">
+            <img src="pic/1.jpg" alt="甜点1">
+        </div>
+        <div class="menu-slide" data-category="dessert">
+            <img src="pic/3.jpg" alt="甜点2">
+        </div>
+    </div>
+
+    <!-- 翻页按钮 -->
+    <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
